@@ -1,0 +1,18 @@
+{% extend 'layout.html.twig' %}
+
+
+{% block body %}
+<div id="content-container" class="container_24">
+  <div id="main-content" class="grid_16">
+    <div class="main-content-padding">
+      {% block content %}{% endblock %}
+      <div class="clear"></div>
+    </div>{# end main-content-padding #}
+  </div>{# end main-content #}
+  <div id="sidebar" class="grid_8">
+    <div id="sidebarSubnav">
+      {% block sidebar %}{% endblock %}
+    </div>
+  </div>  
+</div>{# end page-content #}
+{% endblock %}
