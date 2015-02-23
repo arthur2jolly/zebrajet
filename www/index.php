@@ -1,11 +1,27 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
 
+use Symfony\Component\Translation\Loader\YamlFileLoader;
+
 $app = new Silex\Application();
 
 $app['translator.domains'] = array(
     'messages' => array()
 );
+
+$app['translator'] = $app->share($app->extend('translator', function($translator, $app) {
+            $translator->addLoader('yaml', new YamlFileLoader());
+
+            $translator->addResource('yaml', __DIR__.'/locales/en.yml', 'en');
+            $translator->addResource('yaml', __DIR__.'/locales/de.yml', 'de');
+            $translator->addResource('yaml', __DIR__.'/locales/fr.yml', 'fr');
+
+            return $translator;
+        }));
+
+$app->register(new Silex\Provider\TranslationServiceProvider(), array(
+        'locale_fallbacks' => array('fr'),
+    ));
 
 $app->get('/{_locale}/qui-sommes-nous', function ($name) use ($app) {
 

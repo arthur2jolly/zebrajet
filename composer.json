@@ -1,5 +1,8 @@
 {
     "require": {
         "silex/silex": "~1.2"
+    },
+    "require-dev": {
+        "symfony/translation": "2.6.4"
     }
 }
