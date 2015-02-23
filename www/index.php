@@ -9,7 +9,7 @@ $app['translator.domains'] = array(
     'messages' => array()
 );
 
-$app['translator'] = $app->share($app->extend('translator', function($translator, $app) {
+$app['translator'] = $app->share($app->extend('translator', function(\Silex\Translator $translator, $app) {
             $translator->addLoader('yaml', new YamlFileLoader());
 
             $translator->addResource('yaml', __DIR__.'/locales/en.yml', 'en');
@@ -19,9 +19,17 @@ $app['translator'] = $app->share($app->extend('translator', function($translator
             return $translator;
         }));
 
+/**
+ * PROVIDERS
+ */
 $app->register(new Silex\Provider\TranslationServiceProvider(), array(
         'locale_fallbacks' => array('fr'),
     ));
+
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+        'twig.path' => __DIR__.'/templates',
+    ));
+
 
 $app->get('/{_locale}/qui-sommes-nous', function ($name) use ($app) {
 
