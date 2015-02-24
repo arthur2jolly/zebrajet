@@ -1,8 +1,12 @@
 {
     "require": {
-        "silex/silex": "~1.2"
+        "silex/silex": "~1.2",
+        "twig/twig": "~1.18",
+        "symfony/translation": "~2.6",
+        "symfony/config": "~2.6",
+        "symfony/yaml": "~2.6",
+        "symfony/twig-bridge": "~2.6"
     },
     "require-dev": {
-        "symfony/translation": "2.6.4"
     }
 }
