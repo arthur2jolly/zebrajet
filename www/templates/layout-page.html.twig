@@ -22,7 +22,11 @@
                 <h3 class="entry-title widgettitle">{{ 'title.gallery'|trans }}</h3>
                 <div class="ngg-widget entry-content">
                 {% spaceless %}
-                {% block sidebar %}{% endblock %}
+                {% block sidebar %}
+                    {% for image in gallery %}
+                        {% include 'inc/gallery-image.html.twig' with {'image': image} only %}
+                    {% endfor %}
+                {% endblock %}
                 {% endspaceless %}
                 </div>
             </div>
