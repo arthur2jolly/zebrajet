@@ -18,7 +18,7 @@ Cufon.replace('h6', {textShadow:'0 1px #FFF'});
 Cufon.replace('#page-content #page-title h2', {textShadow:'0 1px #000'});
 Cufon.replace('#slogan', { fontFamily: 'Marker Felt' });
 
-
+/*
 jQuery(document).ready(function($){
   $('p.signup-button a')
     .css({ 'backgroundPosition': '0 0' })
@@ -36,7 +36,7 @@ jQuery(document).ready(function($){
 	  }
     );
 });
-
+*/
 // Scroll to Top script
 jQuery(document).ready(function($){
     $('a[href=#top]').click(function(){
@@ -46,13 +46,6 @@ jQuery(document).ready(function($){
 });
 
 
-// Scroll to Top script
-jQuery(document).ready(function($){
-    $('a[href=#top]').click(function(){
-        $('html, body').animate({scrollTop:0}, 'slow');
-        return false;
-    });
-});
 
 /**
  * CoolInput Plugin
@@ -98,6 +91,7 @@ jQuery(document).ready(function($){
 	    })
 	}
     });
+/*
 jQuery(document).ready(function($){
 	// first input box is a search box, notice passing of a custom class and an icon to the coolInput function
 	$('#search_field').coolinput({
@@ -109,9 +103,10 @@ jQuery(document).ready(function($){
 		iconClass: 'signup_icon'
 	});
 });
-
+*/
 
 // initialise Superfish Menu
+/*
 jQuery(document).ready(function($){
     $("ul.sf-menu").supersubs({
 	minWidth:    12,   // minimum width of sub-menus in em units
@@ -124,6 +119,7 @@ jQuery(document).ready(function($){
 	dropShadows: false
     });
 });
+*/
 
 // ThumbCaption script
 jQuery(document).ready(function($){
