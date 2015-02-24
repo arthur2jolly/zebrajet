@@ -1,0 +1,32 @@
+menu.about-us: "Qui sommes-nous ?"
+menu.insurance: "Assurance"
+menu.material: "Matériel"
+menu.activites: "Activités"
+menu.trips: "Trajets et carte"
+menu.partners: "Partenaires"
+menu.price-list: "Tarifs"
+menu.gallery: "Galerie"
+menu.contact: "Contact"
+menu.google-Location: "Google location"
+menu.title: "Menu"
+
+title.about-us: "Qui sommes-nous"
+title.trips: "Trajets et carte"
+title.activities: "Activités"
+title.contact: "Contact"
+title.gallery: "Galerie"
+
+see-more: "Voir la suite"
+home.bloc1: "Zebrajet a été créée au Cap Vert en 2008 par Maï et Vincent tous 2 professionnels du jet ski depuis plus de 12 ans."
+home.bloc2: "BOOSTEZ VOTRE ADRENALINE tout en découvrant les côtes capverdiennes et sa faune aquatique !!!"
+home.bloc3: "Les parcours en jet ski sont toujours adaptés en fonction de la météo et de votre expérience."
+
+bottom.para1: "Déjà au Cap Vert ? sur l’île de Sal ?<br />Retrouvez nous à côté du ponton de <span class='brand-color'>Santa Maria</span>, sur la plage<br />de l’hôtel MORABEZA."
+bottom.para2: "Renseignements et réservation Odisseia center Santa Maria Pontao face hotel Morabeza - Ilha do Sal."
+phone: "Tél"
+mail: "Mail"
+back-to-top: "Haut de page"
+
+about-us.paragraphes:
+  - "<span class='brand-color'>Zebrajet</span> a été créée au Cap Vert en 2008 par Maï et Vincent tous 2 professionnels du jet ski depuis plus de 12 ans."
+  - "Après avoir travaillé pour le compte d’investisseurs en Guadeloupe, et au Sénégal, décision fut prise d’ouvrir à leur propre compte une structure de taille familiale répondant au mieux aux normes de sécurité exigées par leur nombreux partenaires hôteliers et tour opérateur."
