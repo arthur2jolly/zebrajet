@@ -1,29 +1,31 @@
-<h3 class="bottom-col-title">Menu</h3>
+<h3 class="bottom-col-title">{{ 'menu.title'|trans }}</h3>
+{% spaceless %}
 <div class="menu-menu-footer-container">
   <ul id="menu-menu-footer" class="menu">
     <li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248">
-      <a href="qui-sommes-nous">Qui sommes nous ?</a>
+      <a href="{{ url('fr_about-us') }}">{{ 'menu.about-us'|trans }}</a>
     </li>
     <li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249">
-      <a href="assurance">Assurance</a>
+      <a href="{{ url('fr_insurance') }}">{{ 'menu.insurance'|trans }}</a>
     </li>
     <li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-250">
-      <a href="le-materiel">Le matériel</a>
+      <a href="{{ url('fr_material') }}">{{ 'menu.material'|trans }}</a>
     </li>
     <li id="menu-item-251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251">
-      <a href="activites">Activités</a>
+      <a href="{{ url('fr_activities') }}">{{ 'menu.activites'|trans }}</a>
     </li>
     <li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252">
-      <a href="trajets-et-carte">Trajets et Carte</a>
+      <a href="{{ url('fr_trips') }}">{{ 'menu.trips'|trans }}</a>
     </li>
     <li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253">
-      <a href="200-2">Google Localisation</a>
+      <a href="{{ url('fr_google-location') }}">{{ 'menu.google-Location'|trans }}</a>
     </li>
     <li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254">
-      <a href="partenaire">Partenaire</a>
+      <a href="{{ url('fr_partners') }}">{{ 'menu.partners'|trans }}</a>
     </li>
     <li id="menu-item-255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-255">
-      <a href="tarifs">Tarifs</a>
+      <a href="{{ url('fr_price-list') }}">{{ 'menu.price-list'|trans }}</a>
     </li>
   </ul>
 </div>
+{% endspaceless %}

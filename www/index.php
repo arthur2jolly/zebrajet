@@ -34,40 +34,57 @@ $translator->setLocale('fr');
 
 $app['translator'] = $translator;
 
-$app->get('/{_locale}/qui-sommes-nous', function ($name) use ($app) {
 
+$app->get('/', function () use ($app) {
+    return $app['twig']->render('pages/home.html.twig', array());
+})->bind('homepage');
+
+$app->get('/{_locale}', function () use ($app) {
+    return $app['twig']->render('pages/home.html.twig', array());
+})->bind('fr_homepage');
+
+$app->get('/{_locale}/qui-sommes-nous', function () use ($app) {
+    return $app['twig']->render('pages/about-us.html.twig', array());
     })->bind('fr_about-us');
 
-$app->get('/{_locale}/assurance', function ($name) use ($app) {
+$app->get('/{_locale}/assurance', function () use ($app) {
 
     })->bind('fr_insurance');
 
-$app->get('/{_locale}/le-materiel', function ($name) use ($app) {
+$app->get('/{_locale}/le-materiel', function () use ($app) {
 
     })->bind('fr_material');
 
-$app->get('/{_locale}/activites', function ($name) use ($app) {
+$app->get('/{_locale}/activites', function () use ($app) {
 
-    })->bind('fr_activites');
+    })->bind('fr_activities');
 
-$app->get('/{_locale}/trajets-et-carte', function ($name) use ($app) {
+$app->get('/{_locale}/trajets-et-carte', function () use ($app) {
 
     })->bind('fr_trips');
 
-$app->get('/{_locale}/partenaires', function ($name) use ($app) {
+$app->get('/{_locale}/partenaires', function () use ($app) {
 
     })->bind('fr_partners');
 
-$app->get('/{_locale}/tarifs', function ($name) use ($app) {
+$app->get('/{_locale}/tarifs', function () use ($app) {
 
     })->bind('fr_price-list');
 
-$app->get('/{_locale}/galerie', function ($name) use ($app) {
+$app->get('/{_locale}/galerie', function () use ($app) {
 
     })->bind('fr_gallery');
 
-$app->get('/{_locale}/contact', function ($name) use ($app) {
+$app->get('/{_locale}/google-location', function () use ($app) {
+
+})->bind('fr_google-location');
+
+$app->get('/{_locale}/contact', function () use ($app) {
 
     })->bind('fr_contact');
+
+$app->post('/{_locale}/contact', function () use ($app) {
+
+})->bind('fr_contact-create');
 
 $app->run();

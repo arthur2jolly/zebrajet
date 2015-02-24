@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="{{ app.translator.locale }}">
 <head>
   <meta charset="utf-8">
   <title>Zebrajet</title>
@@ -19,7 +19,7 @@
   <script type='text/javascript' src='/assets/js/jquery.cycle2.carousel.min.js?ver=2.1.6'></script>
   <script type='text/javascript' src='/assets/js/script.js?ver=2.0'></script>
 </head>
-<body class="home blog">
+<body class="blog">
   <div id="wrapper-1" class="pngfix">
     <div id="top-container" class="container_24">
       <div class="clear"></div>
@@ -30,7 +30,7 @@
         </div>
         <div id="petitFute">
           <a href="http://www.petitfute.com/guide/259201-zebra-jet?keyword=zebrajet&c=1171" class="nav-rss" title="Petit Futé">
-            <img src="assets/common-images/petit_fute.png" alt="Petit Futé" />
+            <img src="/assets/common-images/petit_fute.png" alt="Petit Futé" />
           </a>
         </div>
         {% include 'inc/logo.html.twig' %}
@@ -79,7 +79,7 @@
       <div id="footer" class="container_24 footer-top">
         <div id="footer_text" class="grid_21"></div>
         <div class="back-to-top">
-          <a href="#top">Back to Top</a>
+          <a href="#top">{{ 'back-to-top'|trans }}</a>
         </div>
       </div><!-- end footer -->
     </div><!-- end footer-bg -->

@@ -1,4 +1,4 @@
-{% extend 'layout.html.twig' %}
+{% extends 'layout.html.twig' %}
 
 
 {% block body %}
@@ -7,10 +7,10 @@
     {% block box1 %}{% endblock %}
   </div>{# end cont-box-1 #}
   <div id='cont-box-2' class='column_1_of_3 home-cont-box'>
-    {% block box1 %}{% endblock %}
+    {% block box2 %}{% endblock %}
   </div>{# end cont-box-2 #}
   <div id='cont-box-3' class='column_1_of_3 home-cont-box'>
-    {% block box1 %}{% endblock %}
+    {% block box3 %}{% endblock %}
   </div>{# end cont-box-3 #}
 </div>{# end page-content #}
 {% endblock %}
