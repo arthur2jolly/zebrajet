@@ -12,7 +12,7 @@ Author URI: http://www.andon-design.com/
     display: table;
     position: relative;
     width: 100%;
-    background: url("../images/fond_texte.png") repeat-y 50%;
+    background: url("/assets/images/fond_texte.png") repeat-y 50%;
 }
 /* Begin Top area (Logo and Search) */
 #top {
@@ -80,12 +80,12 @@ Author URI: http://www.andon-design.com/
     text-shadow: 0 1px #F4F4F4;
 }
 #search input.inputbox_focus {
-    background: transparent url(../images/searchbox.png) no-repeat scroll 0 -31px;
+    background: transparent url(/assets/images/searchbox.png) no-repeat scroll 0 -31px;
 }
 #search input.inputbox {
 }
 #search input.search-btn {
-    background:transparent url("../img/but_search.png") no-repeat scroll 100% 0;
+    background:transparent url("/assets/img/but_search.png") no-repeat scroll 100% 0;
     border: 0 none;
     cursor: pointer;
     float: left;
@@ -110,7 +110,7 @@ Author URI: http://www.andon-design.com/
 
 /* Begin Header with Piecemaker Slider */
 #piecemaker-header {
-    background: #F4F4F4 url(../images/header-bg.png) repeat-x scroll 50% 0;
+    background: #F4F4F4 url(/assets/images/header-bg.png) repeat-x scroll 50% 0;
     display: table;
     height: 370px;
     position: relative;
@@ -125,7 +125,7 @@ Author URI: http://www.andon-design.com/
     text-align:center;
 }
 #pm-shadow {
-    background: transparent url(../common-images/trans-shadow.png) no-repeat scroll 0 100%;
+    background: transparent url(/assets/common-images/trans-shadow.png) no-repeat scroll 0 100%;
     width: 940px;
     height: 300px;
     margin: -260px auto 0;
@@ -196,7 +196,7 @@ Author URI: http://www.andon-design.com/
     z-index:99999;
 }
 #c1-header .c1-slider-navigation a span#slider-prev {
-    background: url("../images/but_prev.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/but_prev.png") no-repeat scroll 0 0 transparent;
     display: none;
     text-indent: -9999px;
     text-decoration: none;
@@ -208,7 +208,7 @@ Author URI: http://www.andon-design.com/
     z-index: 999;
 }
 #c1-header .c1-slider-navigation a span#slider-next {
-    background: url("../images/but_next.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/but_next.png") no-repeat scroll 0 0 transparent;
     display: none;
     text-indent: -9999px;
     text-decoration: none;
@@ -236,7 +236,7 @@ Author URI: http://www.andon-design.com/
     position: relative;
 }
 #c1-nav a {
-    background: url("../images/slider-bullet.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/slider-bullet.png") no-repeat scroll 0 0 transparent;
     display: block;
     float: left;
     width: 14px;
@@ -257,7 +257,7 @@ Author URI: http://www.andon-design.com/
     position: relative;
 }
 #c1-pauseButton a {
-    background: url("../images/slider-controls.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/slider-controls.png") no-repeat scroll 0 0 transparent;
     display: block;
     float: left;
     width: 14px;
@@ -275,7 +275,7 @@ Author URI: http://www.andon-design.com/
     position: relative;
 }
 #c1-resumeButton a {
-    background: url("../images/slider-controls.png") no-repeat scroll 100% 0 transparent;
+    background: url("/assets/images/slider-controls.png") no-repeat scroll 100% 0 transparent;
     display: block;
     float: left;
     width: 14px;
@@ -286,7 +286,7 @@ Author URI: http://www.andon-design.com/
     outline: 0 none;
 }
 #c1-shadow {
-    background: transparent url(../common-images/trans-shadow.png) no-repeat scroll 0 100%;
+    background: transparent url(/assets/common-images/trans-shadow.png) no-repeat scroll 0 100%;
     width: 940px;
     height: 300px;
     margin: -305px auto 0;
@@ -295,7 +295,7 @@ Author URI: http://www.andon-design.com/
 
 /* Begin Header with Slider Cycle 2 */
 #c2-header {
-    background: #F4F4F4 url(../images/header-bg.png) repeat-x scroll 50% 0;
+    background: #F4F4F4 url(/assets/images/header-bg.png) repeat-x scroll 50% 0;
     display: table;
     height: 380px;
     position: relative;
@@ -353,7 +353,7 @@ Author URI: http://www.andon-design.com/
     margin: 4px 0 0;
 }
 .c2-slide-img-frame {
-    background: transparent url(../images/slide-img-frame.png) no-repeat scroll 0 0;
+    background: transparent url(/assets/images/slide-img-frame.png) no-repeat scroll 0 0;
     width: 580px;
     height: 380px;
     position: absolute;
@@ -379,7 +379,7 @@ Author URI: http://www.andon-design.com/
     margin: -23px 380px 0 0;
 }
 #c2-header .c2-slider-navigation a span#slider-prev {
-    background: url("../images/left-arrow.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/left-arrow.png") no-repeat scroll 0 0 transparent;
     display: none;
     text-indent: -9999px;
     text-decoration: none;
@@ -391,7 +391,7 @@ Author URI: http://www.andon-design.com/
     z-index: 99999;
 }
 #c2-header .c2-slider-navigation a span#slider-next {
-    background: url("../images/right-arrow.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/right-arrow.png") no-repeat scroll 0 0 transparent;
     display: none;
     text-indent: -9999px;
     text-decoration: none;
@@ -405,11 +405,11 @@ Author URI: http://www.andon-design.com/
     z-index: 99999;
 }
 #c2-header .c2-slider-navigation a:hover span#slider-prev {
-    background: url("../images/left-arrow-hover.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/left-arrow-hover.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
 }
 #c2-header .c2-slider-navigation a:hover span#slider-next {
-    background: url("../images/right-arrow-hover.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/right-arrow-hover.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
 }
 #c2-nav {
@@ -421,7 +421,7 @@ Author URI: http://www.andon-design.com/
     position: relative;
 }
 #c2-nav a {
-    background: url("../images/slider-bullet.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/slider-bullet.png") no-repeat scroll 0 0 transparent;
     display: block;
     float: left;
     width: 14px;
@@ -442,7 +442,7 @@ Author URI: http://www.andon-design.com/
     position: relative;
 }
 #c2-pauseButton a {
-    background: url("../images/slider-controls.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/images/slider-controls.png") no-repeat scroll 0 0 transparent;
     display: block;
     float: left;
     width: 14px;
@@ -460,7 +460,7 @@ Author URI: http://www.andon-design.com/
     position: relative;
 }
 #c2-resumeButton a {
-    background: url("../images/slider-controls.png") no-repeat scroll 100% 0 transparent;
+    background: url("/assets/images/slider-controls.png") no-repeat scroll 100% 0 transparent;
     display: block;
     float: left;
     width: 14px;
@@ -495,18 +495,21 @@ Author URI: http://www.andon-design.com/
     color: #32A0D6;
 }
 #home-content-bg {
-    background: #EBEBEB url(../images/home-content-bg.png) repeat-x scroll 50% 0;
+    background: #EBEBEB url(/assets/images/home-content-bg.png) repeat-x scroll 50% 0;
     display: table;
     height: 110px;
     position: relative;
     width: 100%;
 }
 #content-bg {
-    background: #EBEBEB url(../images/content-bg.png) repeat-x scroll 50% 0;
+    background: #EBEBEB url(/assets/images/content-bg.png) repeat-x scroll 50% 0;
     display: table;
     height: 115px;
     position: relative;
     width: 100%;
+}
+.page-content {
+
 }
 /* End Page Container (Sidebar and Main Content) */
 
@@ -625,7 +628,7 @@ ol.commentlist {
 .commentlist .children .children .children .children .children .children li .even .comment-meta,
 .commentlist .children .children .children .children .children .children .children li .even .comment-meta,
 .commentlist .children .children .children .children .children .children .children .children li .even .comment-meta {
-    background: transparent url(../images/comment-bubble.png) no-repeat scroll 40px 100%;
+    background: transparent url(/assets/images/comment-bubble.png) no-repeat scroll 40px 100%;
 }
 .commentlist .odd .comment-meta,
 .commentlist .children .odd .comment-meta,
@@ -633,7 +636,7 @@ ol.commentlist {
 .commentlist .children .children .children li .odd .comment-meta,
 .commentlist .children .children .children .children .children li .odd .comment-meta,
 .commentlist .children .children .children .children .children .children .children li .odd .comment-meta {
-    background: transparent url(../images/comment-bubble-alt.png) no-repeat scroll 20px 100%;
+    background: transparent url(/assets/images/comment-bubble-alt.png) no-repeat scroll 20px 100%;
 }
 .commentlist .comment-meta img {
     padding: 1px;
@@ -656,7 +659,7 @@ commentmetadata {
     margin: 5px;
 }
 .commentlist .time {
-    background: url(../common-images/clock.png) no-repeat 1px;
+    background: url(/assets/common-images/clock.png) no-repeat 1px;
     padding-left: 25px;
 }
 .commentlist .commenttext {
@@ -701,22 +704,22 @@ commentmetadata {
     padding-bottom: 0px;
 }
 .commentlist .commenttext .round-corner-t-l {
-    background:transparent url(../images/round-corners.png) no-repeat scroll 0 0;
+    background:transparent url(/assets/images/round-corners.png) no-repeat scroll 0 0;
     left:0;
     top:0;
 }
 .commentlist .commenttext .round-corner-t-r {
-    background:transparent url(../images/round-corners.png) no-repeat scroll 100% 0;
+    background:transparent url(/assets/images/round-corners.png) no-repeat scroll 100% 0;
     right:0;
     top:0;
 }
 .commentlist .commenttext .round-corner-b-l {
-    background:transparent url(../images/round-corners.png) no-repeat scroll 0 -12px;
+    background:transparent url(/assets/images/round-corners.png) no-repeat scroll 0 -12px;
     left:0;
     bottom:0;
 }
 .commentlist .commenttext .round-corner-b-r {
-    background:transparent url(../images/round-corners.png) no-repeat scroll 100% -12px;
+    background:transparent url(/assets/images/round-corners.png) no-repeat scroll 100% -12px;
     right:0;
     bottom:0;
 }
@@ -836,7 +839,7 @@ div.aligncenter {
 #sidebarSubnav h3{
     margin: 3px 0 0;
     padding-bottom: 7px;
-    background: transparent url(../images/underline-1.png) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/underline-1.png) repeat-x scroll 0 100%;
 }
 #sidebarSubnav a {
     text-decoration: none;
@@ -868,7 +871,7 @@ div.aligncenter {
 .custom-formatting li {
     margin: 0;
     width: 100%;
-    background: transparent url(../images/arrow-2.png) no-repeat scroll 5px 10px;
+    background: transparent url(/assets/images/arrow-2.png) no-repeat scroll 5px 10px;
 }
 .custom-formatting li.current_page_item > a, .custom-formatting li.current-cat > a, .custom-formatting li.current > a {
     color: #777;
@@ -877,31 +880,31 @@ div.aligncenter {
     color: #999;
 }
 .custom-formatting li li {
-    background: transparent url(../images/arrow-2.png) no-repeat scroll 20px 10px;
+    background: transparent url(/assets/images/arrow-2.png) no-repeat scroll 20px 10px;
 }
 .custom-formatting li li li {
-    background: transparent url(../images/arrow-2.png) no-repeat scroll 35px 10px;
+    background: transparent url(/assets/images/arrow-2.png) no-repeat scroll 35px 10px;
 }
 .custom-formatting li li li li {
-    background: transparent url(../images/arrow-2.png) no-repeat scroll 50px 10px;
+    background: transparent url(/assets/images/arrow-2.png) no-repeat scroll 50px 10px;
 }
 .custom-formatting li li li li li {
-    background: transparent url(../images/arrow-2.png) no-repeat scroll 75px 10px;
+    background: transparent url(/assets/images/arrow-2.png) no-repeat scroll 75px 10px;
 }
 .custom-formatting li:hover {
-    background: transparent url(../images/arrow-2-hover.png) no-repeat scroll 5px 10px;
+    background: transparent url(/assets/images/arrow-2-hover.png) no-repeat scroll 5px 10px;
 }
 .custom-formatting li li:hover {
-    background: transparent url(../images/arrow-2-hover.png) no-repeat scroll 20px 10px;
+    background: transparent url(/assets/images/arrow-2-hover.png) no-repeat scroll 20px 10px;
 }
 .custom-formatting li li li:hover {
-    background: transparent url(../images/arrow-2-hover.png) no-repeat scroll 35px 10px;
+    background: transparent url(/assets/images/arrow-2-hover.png) no-repeat scroll 35px 10px;
 }
 .custom-formatting li li li li:hover {
-    background: transparent url(../images/arrow-2-hover.png) no-repeat scroll 50px 10px;
+    background: transparent url(/assets/images/arrow-2-hover.png) no-repeat scroll 50px 10px;
 }
 .custom-formatting li li li li li:hover {
-    background: transparent url(../images/arrow-2-hover.png) no-repeat scroll 75px 10px;
+    background: transparent url(/assets/images/arrow-2-hover.png) no-repeat scroll 75px 10px;
 }
 .custom-formatting li a,
 .custom-formatting li a:hover,
@@ -910,7 +913,7 @@ div.aligncenter {
 .custom-formatting li li li li a:hover,
 .custom-formatting li li li li li a:hover,
 .custom-formatting .current_page_item ul a {
-    background: transparent url(../images/underline-1.png) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/underline-1.png) repeat-x scroll 0 100%;
 }
 .home-cont-box .custom-formatting li a,
 .home-cont-box .custom-formatting li a:hover,
@@ -919,7 +922,7 @@ div.aligncenter {
 .home-cont-box .custom-formatting li li li li a:hover,
 .home-cont-box .custom-formatting li li li li li a:hover,
 .home-cont-box .custom-formatting .current_page_item ul a {
-    background: transparent url(../images/heading_underline.gif) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/heading_underline.gif) repeat-x scroll 0 100%;
  }
 
 .widget_tag_cloud {
@@ -952,7 +955,7 @@ ul#recentcomments {
     color: #555;
     padding: 5px 5px 5px 5px;
     width: 270px;
-    background: transparent url(../images/underline-1.png) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/underline-1.png) repeat-x scroll 0 100%;
 }
 .home-cont-box #recentcomments li {
     margin: 0;
@@ -960,10 +963,10 @@ ul#recentcomments {
     color: #555;
     padding: 5px 5px 5px 5px;
     width: 290px;
-    background: transparent url(../images/heading_underline.gif) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/heading_underline.gif) repeat-x scroll 0 100%;
 }
 #recentcomments li span {
-    background: transparent url(../images/recent-comment.png) no-repeat scroll 0 1px;
+    background: transparent url(/assets/images/recent-comment.png) no-repeat scroll 0 1px;
     width: 18px;
     height: 16px;
     padding-left: 25px;
@@ -983,19 +986,19 @@ ul#recentcomments {
 }
 .widget_text ul li {
     padding-left: 30px;
-    background:transparent url(../images/arrow-2.png) no-repeat scroll 5px 7px;
+    background:transparent url(/assets/images/arrow-2.png) no-repeat scroll 5px 7px;
 }
 .widget_text ul ul li {
     padding-left: 45px;
-    background:transparent url(../images/arrow-2.png) no-repeat scroll 20px 7px;
+    background:transparent url(/assets/images/arrow-2.png) no-repeat scroll 20px 7px;
 }
 .widget_text ul ul ul li {
     padding-left: 60px;
-    background:transparent url(../images/arrow-2.png) no-repeat scroll 35px 7px;
+    background:transparent url(/assets/images/arrow-2.png) no-repeat scroll 35px 7px;
 }
 .widget_text ul ul ul ul li {
     padding-left: 75px;
-    background:transparent url(../images/arrow-2.png) no-repeat scroll 50px 7px;
+    background:transparent url(/assets/images/arrow-2.png) no-repeat scroll 50px 7px;
 }
 .textwidget {
     padding: 7px 0 0;
@@ -1110,7 +1113,7 @@ ul#recentcomments {
     background-color:#000000;
 }
 #footer {
-    background: url("../images/underline-btm.gif") repeat-x scroll 0 0 transparent;
+    background: url("/assets/images/underline-btm.gif") repeat-x scroll 0 0 transparent;
 }
 .footer-top {
     height: 12px;
@@ -1183,7 +1186,7 @@ ul#recentcomments {
     position: relative;
     width: 260px;
     height: 190px;
-    background: transparent url(../common-images/thumb-holder.png) no-repeat scroll 0 0;
+    background: transparent url(/assets/common-images/thumb-holder.png) no-repeat scroll 0 0;
 }
 .portfolioItemWrapper h3, .portfolioItemWrapper h3:hover, .portfolioItemWrapper h3 a {
     text-decoration: none;
@@ -1209,7 +1212,7 @@ ul#recentcomments {
     width: 250px;
 }
 .portfolio-zoom-image {
-    background-image: url(../common-images/zoom-image.png);
+    background-image: url(/assets/common-images/zoom-image.png);
     bottom: 0;
     height: 157px;
     position: absolute;
@@ -1223,7 +1226,7 @@ ul#recentcomments {
     position: relative;
     width: 600px;
     height: 230px;
-    background: transparent url(../common-images/post-img-holder.png) no-repeat scroll 0 0;
+    background: transparent url(/assets/common-images/post-img-holder.png) no-repeat scroll 0 0;
 }
 .postImage {
     background-color: #FFFFFF;
@@ -1242,7 +1245,7 @@ ul#recentcomments {
     width: 590px;
 }
 .post-hover-image {
-    background-image: url(../common-images/hover-image.png);
+    background-image: url(/assets/common-images/hover-image.png);
     bottom: 0;
     height: 190px;
     position: absolute;
@@ -1346,7 +1349,7 @@ strong.search-excerpt { background: yellow; }
     background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#BDE5F8));
 }
 .info .msg-box-icon {
-    background: transparent url('../common-images/info.png') no-repeat scroll 4px 50%;
+    background: transparent url('/assets/common-images/info.png') no-repeat scroll 4px 50%;
     display: block;
     padding: 18px 10px 18px 50px;
 }
@@ -1358,7 +1361,7 @@ strong.search-excerpt { background: yellow; }
     background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#DFF2BF));
 }
 .success .msg-box-icon {
-    background: transparent url('../common-images/success.png') no-repeat scroll 4px 50%;
+    background: transparent url('/assets/common-images/success.png') no-repeat scroll 4px 50%;
     display: block;
     padding: 18px 10px 18px 50px;
 }
@@ -1370,7 +1373,7 @@ strong.search-excerpt { background: yellow; }
     background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#FEEFB3));
 }
 .warning .msg-box-icon {
-    background: transparent url('../common-images/warning.png') no-repeat scroll 4px 50%;
+    background: transparent url('/assets/common-images/warning.png') no-repeat scroll 4px 50%;
     display: block;
     padding: 18px 10px 18px 50px;
 }
@@ -1382,7 +1385,7 @@ strong.search-excerpt { background: yellow; }
     background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#FFBABA));
 }
 .erroneous .msg-box-icon {
-    background: transparent url('../common-images/error.png') no-repeat scroll 4px 50%;
+    background: transparent url('/assets/common-images/error.png') no-repeat scroll 4px 50%;
     display: block;
     padding: 18px 10px 18px 50px;
 }
@@ -1583,34 +1586,34 @@ ul.list-1 li, ul.list-2 li, ul.list-3 li, ul.list-4 li, ul.list-5 li, ul.list-6 
     padding-left: 25px !important;
 }
 ul.list-1 li {
-    background: transparent url(../common-images/tick-green.png) no-repeat scroll 0 3px;
+    background: transparent url(/assets/common-images/tick-green.png) no-repeat scroll 0 3px;
 }
 ul.list-2 li {
-    background: transparent url(../common-images/tick-grey.png) no-repeat scroll 0 3px;
+    background: transparent url(/assets/common-images/tick-grey.png) no-repeat scroll 0 3px;
 }
 ul.list-3 li {
-    background: transparent url(../common-images/exclamation.png) no-repeat scroll 0 3px;
+    background: transparent url(/assets/common-images/exclamation.png) no-repeat scroll 0 3px;
 }
 ul.list-4 li {
-    background: transparent url(../common-images/thumb-up.png) no-repeat scroll 0 3px;
+    background: transparent url(/assets/common-images/thumb-up.png) no-repeat scroll 0 3px;
 }
 ul.list-5 li {
-    background: transparent url(../common-images/lifeboy.png) no-repeat scroll 0 3px;
+    background: transparent url(/assets/common-images/lifeboy.png) no-repeat scroll 0 3px;
 }
 ul.list-6 li {
-    background: transparent url(../common-images/calendar-task.png) no-repeat scroll 0 3px;
+    background: transparent url(/assets/common-images/calendar-task.png) no-repeat scroll 0 3px;
 }
 ul.list-7 li {
-    background: transparent url(../common-images/pin.png) no-repeat scroll 0 3px;
+    background: transparent url(/assets/common-images/pin.png) no-repeat scroll 0 3px;
 }
 ul.list-8 li {
-    background: transparent url(../common-images/clock.png) no-repeat scroll 0 3px;
+    background: transparent url(/assets/common-images/clock.png) no-repeat scroll 0 3px;
 }
 ul.list-9 li {
-    background: transparent url(../images/double-arrow.png) no-repeat scroll 6px 7px;
+    background: transparent url(/assets/images/double-arrow.png) no-repeat scroll 6px 7px;
 }
 ul.list-10 li {
-    background: transparent url(../images/arrow-2.png) no-repeat scroll 6px 5px;
+    background: transparent url(/assets/images/arrow-2.png) no-repeat scroll 6px 5px;
 }
 
 ul#c2-slider li ul.list-1, ul#c2-slider li ul.list-2, ul#c2-slider li ul.list-3, ul#c2-slider li ul.list-4, ul#c2-slider li ul.list-5,
@@ -1631,34 +1634,34 @@ ul#c2-slider li ul.list-6 li, ul#c2-slider li ul.list-7 li, ul#c2-slider li ul.l
     width: 270px;
 }
 ul#c2-slider li ul.list-1 li {
-    background: transparent url(../common-images/tick-green.png) no-repeat scroll 0 7px;
+    background: transparent url(/assets/common-images/tick-green.png) no-repeat scroll 0 7px;
 }
 ul#c2-slider li ul.list-2 li {
-    background: transparent url(../common-images/tick-grey.png) no-repeat scroll 0 7px;
+    background: transparent url(/assets/common-images/tick-grey.png) no-repeat scroll 0 7px;
 }
 ul#c2-slider li ul.list-3 li {
-    background: transparent url(../common-images/exclamation.png) no-repeat scroll 0 7px;
+    background: transparent url(/assets/common-images/exclamation.png) no-repeat scroll 0 7px;
 }
 ul#c2-slider li ul.list-4 li {
-    background: transparent url(../common-images/thumb-up.png) no-repeat scroll 0 7px;
+    background: transparent url(/assets/common-images/thumb-up.png) no-repeat scroll 0 7px;
 }
 ul#c2-slider li ul.list-5 li {
-    background: transparent url(../common-images/lifeboy.png) no-repeat scroll 0 7px;
+    background: transparent url(/assets/common-images/lifeboy.png) no-repeat scroll 0 7px;
 }
 ul#c2-slider li ul.list-6 li {
-    background: transparent url(../common-images/calendar-task.png) no-repeat scroll 0 7px;
+    background: transparent url(/assets/common-images/calendar-task.png) no-repeat scroll 0 7px;
 }
 ul#c2-slider li ul.list-7 li {
-    background: transparent url(../common-images/pin.png) no-repeat scroll 0 7px;
+    background: transparent url(/assets/common-images/pin.png) no-repeat scroll 0 7px;
 }
 ul#c2-slider li ul.list-8 li {
-    background: transparent url(../common-images/clock.png) no-repeat scroll 0 7px;
+    background: transparent url(/assets/common-images/clock.png) no-repeat scroll 0 7px;
 }
 ul#c2-slider li ul.list-9 li {
-    background: transparent url(../images/double-arrow.png) no-repeat scroll 6px 12px;
+    background: transparent url(/assets/images/double-arrow.png) no-repeat scroll 6px 12px;
 }
 ul#c2-slider li ul.list-10 li {
-    background: transparent url(../images/arrow-2.png) no-repeat scroll 6px 10px;
+    background: transparent url(/assets/images/arrow-2.png) no-repeat scroll 6px 10px;
 }
 
 .dropcap {
@@ -1694,12 +1697,12 @@ a.light-button {
     text-shadow: none;
 }
 a.dark-button {
-    background:transparent url(../common-images/dark-button-l.png) no-repeat scroll left top;
+    background:transparent url(/assets/common-images/dark-button-l.png) no-repeat scroll left top;
     color: #ACACAC;
     font-weight: bold;
 }
 a.light-button {
-    background:transparent url(../common-images/light-button-l.png) no-repeat scroll left top;
+    background:transparent url(/assets/common-images/light-button-l.png) no-repeat scroll left top;
     color: #666;
     font-weight: bold;
 }
@@ -1710,12 +1713,12 @@ a.light-button span {
     position: relative;
 }
 a.dark-button span {
-    background: transparent url(../common-images/dark-button-r.png) no-repeat scroll right top;
+    background: transparent url(/assets/common-images/dark-button-r.png) no-repeat scroll right top;
     color: #ACACAC;
     padding: 0 50px 0 10px;
 }
 a.light-button span {
-    background: transparent url(../common-images/light-button-r.png) no-repeat scroll right top;
+    background: transparent url(/assets/common-images/light-button-r.png) no-repeat scroll right top;
     color: #666;
     padding: 0 50px 0 10px;
 }
@@ -1760,12 +1763,12 @@ a.small-light-button {
     text-shadow: none;
 }
 a.small-dark-button {
-    background:transparent url(../common-images/small-dark-button-l.png) no-repeat scroll left top;
+    background:transparent url(/assets/common-images/small-dark-button-l.png) no-repeat scroll left top;
     color: #ACACAC;
     font-weight: bold;
 }
 a.small-light-button {
-    background:transparent url(../common-images/small-light-button-l.png) no-repeat scroll left top;
+    background:transparent url(/assets/common-images/small-light-button-l.png) no-repeat scroll left top;
     color: #666;
     font-weight: bold;
 }
@@ -1776,12 +1779,12 @@ a.small-light-button span {
     position: relative;
 }
 a.small-dark-button span {
-    background: transparent url(../common-images/small-dark-button-r.png) no-repeat scroll right top;
+    background: transparent url(/assets/common-images/small-dark-button-r.png) no-repeat scroll right top;
     color: #ACACAC;
     padding: 0 40px 0 10px;
 }
 a.small-light-button span {
-    background: transparent url(../common-images/small-light-button-r.png) no-repeat scroll right top;
+    background: transparent url(/assets/common-images/small-light-button-r.png) no-repeat scroll right top;
     color: #666;
     padding: 0 40px 0 8px;
 }
@@ -1871,10 +1874,10 @@ a.small-light-button:focus, a.small-light-button:focus span {
 }
 
 .underline-1 {
-    background: transparent url(../images/underline-1.png) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/underline-1.png) repeat-x scroll 0 100%;
 }
 .hr-1 {
-    background: transparent url(../images/underline-1.png) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/underline-1.png) repeat-x scroll 0 100%;
     height: 2px;
     margin: 15px 0 0;
 }
@@ -1889,7 +1892,7 @@ a.small-light-button:focus, a.small-light-button:focus span {
     margin-top: 108px;
 }
 #bottom {
-    background: transparent url(../images/bottom-highlight.png) no-repeat scroll 50% 0;
+    background: transparent url(/assets/images/bottom-highlight.png) no-repeat scroll 50% 0;
     font-size: 12px;
     padding: 14px 0;
     display: table;
@@ -1936,7 +1939,7 @@ a.small-light-button:focus, a.small-light-button:focus span {
     margin-left: 0;
     width: 100%;
     padding: 5px 0;
-    background: url("../images/underline-btm.gif") repeat-x scroll 0 100% transparent;
+    background: url("/assets/images/underline-btm.gif") repeat-x scroll 0 100% transparent;
 }
 #bottom .widget_recent_entries li li,
 #bottom .widget_categories li li,
@@ -1945,7 +1948,7 @@ a.small-light-button:focus, a.small-light-button:focus span {
 #bottom .widget_archive li li,
 #bottom .widget_links li li,
 #bottom .widget_nav_menu li li {
-    background: url("../images/double-arrow.png") no-repeat scroll 13px 8px transparent;
+    background: url("/assets/images/double-arrow.png") no-repeat scroll 13px 8px transparent;
 }
 #bottom .widget_recent_entries li li li,
 #bottom .widget_categories li li li,
@@ -1954,7 +1957,7 @@ a.small-light-button:focus, a.small-light-button:focus span {
 #bottom .widget_archive li li li,
 #bottom .widget_links li li li,
 #bottom .widget_nav_menu li li li {
-    background: url("../images/double-arrow.png") no-repeat scroll 23px 8px transparent;
+    background: url("/assets/images/double-arrow.png") no-repeat scroll 23px 8px transparent;
 }
 #bottom .widget_recent_entries li li li li,
 #bottom .widget_categories li li li li,
@@ -1963,7 +1966,7 @@ a.small-light-button:focus, a.small-light-button:focus span {
 #bottom .widget_archive li li li li,
 #bottom .widget_links li li li li,
 #bottom .widget_nav_menu li li li li {
-    background: url("../images/double-arrow.png") no-repeat scroll 33px 8px transparent;
+    background: url("/assets/images/double-arrow.png") no-repeat scroll 33px 8px transparent;
 }
 #bottom .widget_recent_entries li a,
 #bottom .widget_categories li a,
@@ -1977,7 +1980,7 @@ a.small-light-button:focus, a.small-light-button:focus span {
 #bottom .widget_nav_menu li a{
     padding: 2px 0 5px 20px;
     display: block;
-    background: url("../images/underline-btm.gif") repeat-x scroll 0 100% transparent;
+    background: url("/assets/images/underline-btm.gif") repeat-x scroll 0 100% transparent;
 }
 #bottom .widget_recent_entries li li a,
 #bottom .widget_categories li li a,
@@ -2044,7 +2047,7 @@ a.small-light-button:focus, a.small-light-button:focus span {
     padding: 0 20px;
 }
 h3.bottom-col-title {
-    background: transparent url(../images/underline-btm.gif) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/underline-btm.gif) repeat-x scroll 0 100%;
     margin-bottom: 1px;
     padding-bottom: 10px;
     font-size: 20px;
@@ -2098,7 +2101,7 @@ h3.bottom-col-title {
 }
 /* Begin Signup Button */
 .signup-button {
-    background:url(../common-images/signup-button.png) no-repeat 0 -36px;
+    background:url(/assets/common-images/signup-button.png) no-repeat 0 -36px;
     display:block;
     width:144px;
     height:36px;
@@ -2106,7 +2109,7 @@ h3.bottom-col-title {
     padding: 0;
 }
 .signup-button a {
-    background:url(../common-images/signup-button.png) no-repeat 0 0;
+    background:url(/assets/common-images/signup-button.png) no-repeat 0 0;
     display:block;
     width:100%;
     height:100%;
@@ -2175,7 +2178,7 @@ h3.bottom-col-title {
 #content-container .cont_col_3_title {
     color: #535353;
     font-size: 2.0em;
-    background:transparent url(../images/heading_underline.gif) repeat-x scroll 0 100%;
+    background:transparent url(/assets/images/heading_underline.gif) repeat-x scroll 0 100%;
     margin: 17px 0 3px;
     padding:5px 0 7px;
 }
@@ -2196,7 +2199,7 @@ URL: http://www.webmaster-source.com/wp125-ad-plugin-wordpress/
 
 
 .home-page-divider {
-    background:transparent url(../common-images/home-page-divider.png) no-repeat scroll 50% 0;
+    background:transparent url(/assets/common-images/home-page-divider.png) no-repeat scroll 50% 0;
     width: 820px;
     height: 20px;
     margin: 10px auto -5px;
@@ -2231,7 +2234,7 @@ URL: http://www.webmaster-source.com/wp125-ad-plugin-wordpress/
 
 /* Begin Demo Related CSS */
 .jquery-img {
-    background: url('../images/jquery.jpg') no-repeat scroll 50% 0 transparent;
+    background: url('/assets/images/jquery.jpg') no-repeat scroll 50% 0 transparent;
     display: block;
     width: 288px;
     height: 98px;
@@ -2267,7 +2270,7 @@ table.custom-table tfoot td {
     font-size: 11px;
 }
 table.custom-table tbody td {
-    background: url('../images/back.png') repeat scroll transparent;
+    background: url('/assets/images/back.png') repeat scroll transparent;
 }
 table.custom-table tbody tr:hover td {
     color: #555;
@@ -2283,7 +2286,7 @@ table.custom-table tbody tr:hover td a {
 
 /* Begin Shortcodes Styles */
 .divider {
-    background: transparent url(../images/underline-1.png) repeat-x scroll 0 100%;
+    background: transparent url(/assets/images/underline-1.png) repeat-x scroll 0 100%;
     clear: both;
     display: block;
     margin-bottom: 20px;
@@ -2317,7 +2320,7 @@ blockquote.alignright {
     width: 220px;
 }
 blockquote {
-    background: url("../common-images/pull-quote-dark.png") no-repeat scroll 0 7px transparent;
+    background: url("/assets/common-images/pull-quote-dark.png") no-repeat scroll 0 7px transparent;
     font-family: Georgia,"Times New Roman",Times,serif;
     padding: 10px 20px 10px 45px;
     font-size: 16px;
@@ -2325,7 +2328,7 @@ blockquote {
     font-style: italic;
 }
 blockquote.bq-light {
-    background: url("../common-images/pull-quote-light.png") no-repeat scroll 0 7px transparent;
+    background: url("/assets/common-images/pull-quote-light.png") no-repeat scroll 0 7px transparent;
 }
 blockquote { quotes: none; }
 
@@ -2344,7 +2347,7 @@ blockquote { quotes: none; }
         margin-left: 12px;
         width:40px;
         height:40px;
-        background:url("../img/bk_topsocial2.png") 0 0 no-repeat;
+        background:url("/assets/img/bk_topsocial2.png") 0 0 no-repeat;
         
 	
 }

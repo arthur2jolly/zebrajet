@@ -152,3 +152,25 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
     padding: 0;
 }
 
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+nav ul li:hover {
+
+}
+nav ul li:hover a {
+    color: #fff;
+}
+
+nav ul li a {
+    display: block; padding: 25px 40px;
+    color: #fff; text-decoration: none;
+}
