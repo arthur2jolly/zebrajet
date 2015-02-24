@@ -2,34 +2,37 @@
 require_once __DIR__.'/../vendor/autoload.php';
 
 use Symfony\Component\Translation\Loader\YamlFileLoader;
+use Silex\Provider\TwigServiceProvider;
+use Silex\Provider\TranslationServiceProvider;
+
 
 $app = new Silex\Application();
+$app['debug'] = true;
 
-$app['translator.domains'] = array(
-    'messages' => array()
-);
 
-$app['translator'] = $app->share($app->extend('translator', function(\Silex\Translator $translator, $app) {
-            $translator->addLoader('yaml', new YamlFileLoader());
-
-            $translator->addResource('yaml', __DIR__.'/locales/en.yml', 'en');
-            $translator->addResource('yaml', __DIR__.'/locales/de.yml', 'de');
-            $translator->addResource('yaml', __DIR__.'/locales/fr.yml', 'fr');
-
-            return $translator;
-        }));
 
 /**
  * PROVIDERS
  */
-$app->register(new Silex\Provider\TranslationServiceProvider(), array(
-        'locale_fallbacks' => array('fr'),
-    ));
-
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
+$app->register(new TwigServiceProvider(), array(
         'twig.path' => __DIR__.'/templates',
     ));
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
+
+$translator = new Silex\Translator($app, new Symfony\Component\Translation\MessageSelector());
+$translator->addLoader('yaml', new YamlFileLoader());
+$translator->addResource('yaml', __DIR__.'/locales/fr.yml', 'fr');
+$translator->addResource('yaml', __DIR__.'/locales/en.yml', 'en');
+$translator->addResource('yaml', __DIR__.'/locales/de.yml', 'de');
+$translator->addResource('yaml', __DIR__.'/locales/fr.yml', 'fr');
+$translator->addResource('yaml', __DIR__.'/locales/es.yml', 'es');
+$translator->addResource('yaml', __DIR__.'/locales/it.yml', 'it');
+$translator->addResource('yaml', __DIR__.'/locales/pt.yml', 'pt');
+$translator->setFallbackLocales(array('fr', 'en'));
+$translator->setLocale('fr');
+
+$app['translator'] = $translator;
 
 $app->get('/{_locale}/qui-sommes-nous', function ($name) use ($app) {
 
