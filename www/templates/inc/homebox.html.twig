@@ -1,0 +1,12 @@
+{% spaceless %}
+<div class="cont_col_1 widget_text substitute_widget_class">
+    <h3 class="cont_col_1_title">{{ title|trans }}</h3>
+    <div class="textwidget">
+        <a href="{{ url(url) }}">
+            <img class="alignleft size-full" title="background" src="{{ imagesrc }}" alt="" width="270" height="100">
+        </a>
+        {{ text|trans }}
+        <a href="{{ url(url) }}"><strong><span style="color: #33a0d6;">{{ 'see-more'|trans }} >></span></strong></a>
+    </div>
+</div>
+{% endspaceless %}
