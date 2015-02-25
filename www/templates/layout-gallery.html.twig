@@ -1,0 +1,21 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block body %}
+    <div id="page-content">
+    <div id="page-content-header" class="container_24">
+        <div id="page-title">
+            {% set titleKey = 'title.' ~ templateName %}
+            <h2>{% block contenttitle %}{{ titleKey|trans }}{% endblock %}</h2>
+        </div>
+        <div class="no-breadcrumbs-padding"></div>
+    </div>
+    <div id="content-container" class="page-content container_24">
+        <div id="main-content">
+            <div class="main-content-padding">
+                {% block content %}{% endblock %}
+                <div class="clear"></div>
+            </div>{# end main-content-padding #}
+        </div>{# end main-content #}
+    </div>
+{% endblock %}

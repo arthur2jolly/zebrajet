@@ -1,0 +1,83 @@
+{% extends 'layout-page.html.twig' %}
+
+
+
+{% block content %}
+    <table class="Price-list">
+        <tr>
+            <td colspan="3" class="brand-color big-title"><strong>{{ 'jet-ski'|trans|upper }}</strong></td>
+        </tr>
+        <tr>
+            <th>{{ 'time'|trans|upper }}</th>
+            <th>{{ 'price'|trans|upper }}</th>
+            <th>{{ 'max-person'|trans|upper }}</th>
+        </tr>
+        <tr class="odd">
+            <td>30 {{ 'minutes'|trans }}</td>
+            <td>70€</td>
+            <td align="center">2</td>
+        </tr>
+        <tr>
+            <td>1 {{ 'hour'|trans }}</td>
+            <td>120€</td>
+            <td align="center">2</td>
+        </tr>
+        <tr class="odd">
+            <td>2 {{ 'hours'|trans }}</td>
+            <td>200€</td>
+            <td align="center">2</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="brand-color" align="center">*Nous avons plusieurs jet ski à votre disposition.<br>
+                *Les prix sont toujours par jet ski pour 1 ou 2 personnes.</td>
+        </tr>
+        </table>
+        <table class="Price-list">
+        <tr>
+            <td colspan="3" class="brand-color big-title"><strong>{{ 'banana'|trans|upper }}</strong></td>
+        </tr>
+        <tr>
+            <th>{{ 'time'|trans|upper }}</th>
+            <th>{{ 'price'|trans|upper }}</th>
+            <th>{{ 'max-person'|trans|upper }}</th>
+        </tr>
+        <tr class="odd">
+            <td>15 {{ 'minutes'|trans }}</td>
+            <td>35€</td>
+            <td align="center">3</td>
+        </tr>
+        </table>
+        <table class="Price-list">
+        <tr>
+            <td colspan="3" class="brand-color big-title"><strong>{{ 'doughnut'|trans|upper }}</strong></td>
+        </tr>
+        <tr>
+            <th>{{ 'time'|trans|upper }}</th>
+            <th>{{ 'price'|trans|upper }}</th>
+            <th>{{ 'max-person'|trans|upper }}</th>
+        </tr>
+        <tr class="odd">
+            <td>10 {{ 'minutes'|trans }}</td>
+            <td>25€</td>
+            <td align="center">1</td>
+        </tr>
+        </table>
+        <table class="Price-list">
+        <tr>
+            <td colspan="3" class="brand-color big-title"><strong>{{ 'wake-board'|trans|upper }}</strong></td>
+        </tr>
+        <tr>
+            <th>{{ 'time'|trans|upper }}</th>
+            <th>{{ 'price'|trans|upper }}</th>
+            <th>{{ 'max-person'|trans|upper }}</th>
+        </tr>
+        <tr class="odd">
+            <td>10 {{ 'minutes'|trans }}</td>
+            <td>25€</td>
+            <td align="center">1</td>
+        </tr>
+    </table>
+    <p>Nous restons à votre entière disposition pour toute demande particulière, nous vous proposons également des forfaits  pour des groupes, contactez nous par e-mail : zebrajet |AT| voila.fr.</p>
+{% endblock %}
+
+

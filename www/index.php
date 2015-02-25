@@ -48,39 +48,43 @@ $app->get('/{_locale}/qui-sommes-nous', function () use ($app) {
     })->bind('fr_about-us');
 
 $app->get('/{_locale}/assurance', function () use ($app) {
-        return $app['twig']->render('pages/insurance.html.twig', array());
+    return renderPage($app, 'insurance');
     })->bind('fr_insurance');
 
 $app->get('/{_locale}/le-materiel', function () use ($app) {
-        return $app['twig']->render('pages/material.html.twig', array());
+    return renderPage($app, 'material');
     })->bind('fr_material');
 
 $app->get('/{_locale}/activites', function () use ($app) {
-        return $app['twig']->render('pages/activities.html.twig', array());
+    return renderPage($app, 'activities');
     })->bind('fr_activities');
 
 $app->get('/{_locale}/trajets-et-carte', function () use ($app) {
-        return $app['twig']->render('pages/trips.html.twig', array());
+    return renderPage($app, 'trips');
     })->bind('fr_trips');
 
 $app->get('/{_locale}/partenaires', function () use ($app) {
-        return $app['twig']->render('pages/partners.html.twig', array());
+    return renderPage($app, 'partners');
     })->bind('fr_partners');
 
 $app->get('/{_locale}/tarifs', function () use ($app) {
-        return $app['twig']->render('pages/price-list.html.twig', array());
+    return renderPage($app, 'price-list');
     })->bind('fr_price-list');
 
 $app->get('/{_locale}/galerie', function () use ($app) {
-        return $app['twig']->render('pages/gallery.html.twig', array());
+    $gallery = array_diff(scandir(__DIR__.'/assets/gallery'), array('.', '..', '.DS_Store'));
+    shuffle($gallery);
+    $filter = new Twig_SimpleFilter('web_image', 'web_image', array('needs_context' => true));
+    $app['twig']->addFilter($filter);
+        return $app['twig']->render('pages/gallery.html.twig', array('templateName' => 'gallery', 'gallery' => $gallery));
     })->bind('fr_gallery');
 
 $app->get('/{_locale}/google-location', function () use ($app) {
-        return $app['twig']->render('pages/google-location.html.twig', array());
+    return renderPage($app, 'google-location');
 })->bind('fr_google-location');
 
 $app->get('/{_locale}/contact', function () use ($app) {
-        return $app['twig']->render('pages/contact.html.twig', array());
+    return renderPage($app, 'contact');
     })->bind('fr_contact');
 
 $app->post('/{_locale}/contact', function () use ($app) {
@@ -92,16 +96,19 @@ $app->run();
 
 function web_image($context, $path)
 {
-    $img = Image::open($path)->setCacheDir('assets/cache');
-    return $img->resize(120, 75)->crop(0,0, 120, 75)->html("", 'jpg', 100);
+    $img = Image::open($path);
+
+    $output = $img->resize(120)->crop(0,0, 120, 75);
+
+    return $output;
 }
 
 function renderPage($app, $tempate)
 {
-    $gallery = array_diff(scandir(__DIR__.'/assets/gallery'), array('.', '..'));
+    $gallery = array_diff(scandir(__DIR__.'/assets/gallery'), array('.', '..', '.DS_Store'));
     shuffle($gallery);
     $filter = new Twig_SimpleFilter('web_image', 'web_image', array('needs_context' => true));
     $app['twig']->addFilter($filter);
 
-    return $app['twig']->render('pages/'.$tempate.'.html.twig', array('gallery' => array_slice($gallery, 0, 12)));
+    return $app['twig']->render('pages/'.$app['translator']->getLocale().'/'.$tempate.'.html.twig', array('templateName' => $tempate, 'gallery' => array_slice($gallery, 0, 12)));
 }

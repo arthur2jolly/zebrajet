@@ -5,7 +5,8 @@
 <div id="page-content">
     <div id="page-content-header" class="container_24">
         <div id="page-title">
-            <h2>{% block contenttitle %}{% endblock %}</h2>
+            {% set titleKey = 'title.' ~ templateName %}
+            <h2>{% block contenttitle %}{{ titleKey|trans }}{% endblock %}</h2>
         </div>
         <div class="no-breadcrumbs-padding"></div>
     </div>

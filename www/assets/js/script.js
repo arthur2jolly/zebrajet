@@ -43,6 +43,10 @@ jQuery(document).ready(function($){
         $('html, body').animate({scrollTop:0}, 'slow');
         return false;
     });
+
+    if(jQuery('.gallery').length) {
+        $(".gallery").colorbox({rel:'gallery'});
+    }
 });
 
 

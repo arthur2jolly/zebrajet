@@ -1,0 +1,10 @@
+{% extends 'layout-gallery.html.twig' %}
+
+
+
+{% block content %}
+    {% for image in gallery %}
+        <div class="grid_4"></div>
+        {% include 'inc/gallery-image.html.twig' with {'image': image} only %}
+    {% endfor %}
+{% endblock %}

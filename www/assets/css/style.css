@@ -843,6 +843,12 @@ div.aligncenter {
 }
 #sidebarSubnav a {
     text-decoration: none;
+    margin: 3px 3px 0 0 ;
+    padding: 3px 3px 0 0 ;
+}
+#sidebarSubnav .gallery img {
+    margin: 3px 3px 0 0 ;
+    padding: 3px 3px 0 0 ;
 }
 .custom-formatting,
 .substitute_widget_class {
@@ -2374,4 +2380,27 @@ blockquote { quotes: none; }
 #petitFute a {
         margin-top: 15px;
         padding: 0;
+}
+
+.Price-list {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.Price-list .big-title {
+    font-size: 1.5em;
+    background-color: #EFEFEF;
+}
+
+.Price-list th {
+    font-size: 1.125em;
+}
+
+.Price-list .odd {
+    background-color: #dfdfdf;
+}
+
+.Price-list th,
+.Price-list td {
+    text-align: center;
 }

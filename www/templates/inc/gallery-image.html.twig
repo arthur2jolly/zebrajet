@@ -1,3 +1,4 @@
-<a href="/assets/gallery/{{ image }}" >
-    {{ web_image('/assets/gallery/' ~  image) }}
+<a class="gallery" href="/assets/gallery/{{ image }}" >
+    {% set path = 'assets/gallery/' ~  image %}
+    <img src="/{{ path|web_image }}" alt>
 </a>
