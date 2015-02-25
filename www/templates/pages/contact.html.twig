@@ -1,0 +1,85 @@
+{% extends 'layout-contact.html.twig' %}
+
+
+
+{% block content %}
+
+
+<div class="post" id="post-636">
+    <div class="entry">
+        <p><strong>{{ 'contact.chapo'|trans }}</strong><br/>
+            <span style="color: #33a0d6;">{{ 'contact.meeting-point'|trans }}</span>
+        </p>
+    </div>
+</div>
+<br/>
+
+<div class="clear"></div>
+
+<div id="contactInfo">
+    <div class="grid_4 contactFieldDesc"><em>{{ 'address'|trans }}</em></div>
+    <div class="grid_11 contactFieldValue">{{ 'base-address'|trans }}</div>
+    <div class="clear"></div>
+    <div class="grid_4 contactFieldDesc"></div>
+    <div class="grid_11 contactFieldValue">{{ 'cape-verde'|trans }}</div>
+    <div class="clear"></div>
+    <div class="grid_4 contactFieldDesc"><em>{{ 'contact.form.phone'|trans }}</em></div>
+    <div class="grid_11 contactFieldValue">00 238 974 36 46</div>
+    <div class="clear"></div>
+    <div class="grid_4 contactFieldDesc"><em>{{ 'email'|trans }}</em></div>
+    <div class="grid_11 contactFieldValue">zebrajet@voila.fr</div>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<div id="contact-wrapper">
+    {% if displayForm %}
+    <form id="contactForm" class="cmxform" method="post" action="#">
+        <p><strong>{{ 'contact.form.intro'|trans }}:</strong></p>
+        {% if error|default(false) %}
+        <p class="error"><strong>{{ 'contact.form.error'|trans }}:</strong></p>
+        {% endif %}
+
+        <div>
+            <label for="contact_name">{{ 'name'|trans }} </label><em>({{ 'required'|trans }}, {{ 'two-caracters'|trans }})</em><br/>
+            <input id="contact_name" name="contact_name" size="30" class="required" minlength="2" value="{{ contact_name|default('') }}"/>
+        </div>
+        <div>
+            <label for="contact_email">{{ 'email'|trans }} </label><em>({{ 'required'|trans }})</em><br/>
+            <input id="contact_email" name="contact_email" size="30" class="required email" value="{{ contact_email|default('') }}"/>
+        </div>
+        <div>
+            <label for="contact_phone">{{ 'contact.form.phone'|trans }} </label><em>({{ 'optional'|trans }})</em><br/>
+            <input id="contact_phone" name="contact_phone" size="14" class="phone" value="{{ contact_phone|default('') }}" maxlength="14"/>
+            <label for="contact_ext">ext. </label>
+            <input id="contact_ext" name="contact_ext" size="5" class="ext" value="{{ contact_ext|default('') }}" maxlength="5"/>
+        </div>
+        <div>
+            <label for="contact_message">{{ 'comment'|trans }} </label><em>({{ 'required'|trans }})</em><br/>
+            <textarea id="contact_message" name="contact_message" cols="70" rows="7" class="required">{{ contact_message|default('') }}</textarea>
+        </div>
+        <div>
+            <input name="submit" class="submit" type="submit" value="{{ 'submit'|trans }}"/>
+        </div>
+    </form>
+    {% endif %}
+
+</div>
+
+
+{% endblock %}
+
+{% block sidebar %}
+    <h3 class="widgettitle">{{ 'schedule'|trans }}</h3>
+    <div class="textwidget">
+        <span style="font-size:12px;"><strong>{{ 'monday'|trans }} : </strong></span><span style="float:right;color: #33a0d6;"><em>{{ 'opening-hours'|trans }}</em></span><br/>
+        <span style="font-size:12px;"><strong>{{ 'tuesday'|trans }} : </strong></span><span style="float:right;color: #33a0d6;"><em>{{ 'opening-hours'|trans }}</em></span><br/>
+        <span style="font-size:12px;"><strong>{{ 'wednesday'|trans }} : </strong></span><span style="float:right;color: #33a0d6;"><em>{{ 'opening-hours'|trans }}</em></span><br/>
+        <span style="font-size:12px;"><strong>{{ 'thursday'|trans }} : </strong></span><span style="float:right;color: #33a0d6;"><em>{{ 'opening-hours'|trans }}</em></span><br/>
+        <span style="font-size:12px;"><strong>{{ 'friday'|trans }} : </strong></span><span style="float:right;color: #33a0d6;"><em>{{ 'opening-hours'|trans }}</em></span><br/>
+        <span style="font-size:12px;"><strong>{{ 'saturday'|trans }} : </strong></span><span style="float:right;color: #33a0d6;"><em>{{ 'opening-hours'|trans }}</em></span><br/>
+        <span style="font-size:12px;"><strong>{{ 'sunday'|trans }} : </strong></span><span style="float:right;color: #33a0d6;"><em>{{ 'closed'|trans }}</em></span><br/>
+    </div>
+{% endblock %}
+
+

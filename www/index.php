@@ -5,9 +5,11 @@ use Symfony\Component\Translation\Loader\YamlFileLoader;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Gregwar\Image\Image;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();
-$app['debug'] = true;
+$app['debug'] = false;
 
 
 
@@ -59,6 +61,10 @@ $app->get('/{_locale}/activites', function () use ($app) {
     return renderPage($app, 'activities');
     })->bind('fr_activities');
 
+$app->get('/{_locale}/404', function () use ($app) {
+    return renderPage($app, '404');
+})->bind('fr_404');
+
 $app->get('/{_locale}/trajets-et-carte', function () use ($app) {
     return renderPage($app, 'trips');
     })->bind('fr_trips');
@@ -84,15 +90,58 @@ $app->get('/{_locale}/google-location', function () use ($app) {
 })->bind('fr_google-location');
 
 $app->get('/{_locale}/contact', function () use ($app) {
-    return renderPage($app, 'contact');
+    return $app['twig']->render('pages/contact.html.twig', array('templateName' => 'contact', 'displayForm' => true));
     })->bind('fr_contact');
 
-$app->post('/{_locale}/contact', function () use ($app) {
+$app->get('/{_locale}/contact-merci', function () use ($app) {
+    return $app['twig']->render('pages/contact.html.twig', array('templateName' => 'contact', 'displayForm' => false));
+})->bind('fr_contact-merci');
 
-        //$app->redirect()
+$app->post('/{_locale}/contact', function (Request $request) use ($app) {
+    $contact_name       = strip_tags($request->get('contact_name'));
+    $contact_email      = strip_tags($request->get('contact_email'));
+    $contact_phone      = strip_tags($request->get('contact_phone'));
+    $contact_message    = strip_tags($request->get('contact_message'));
+    $contact_ext        = strip_tags($request->get('contact_ext'));
+
+    if($contact_name && $contact_email && $contact_message) {
+        $subject = "Un message du site zebrajet";
+        $message = "Nom : $contact_name\n";
+        $message .= "Email : $contact_email\n";
+        $message .= "Téléphone : $contact_ext $contact_phone\n";
+        $message .= "Message : $contact_message\n";
+
+        $headers = 'Content-type: text/plain; charset=utf-8'."\r\n";
+
+        mail('zebrajet@voila.fr', $subject, $message, $headers);
+
+        return $app->redirect('contact-merci');
+    }
+
+    return $app['twig']->render('pages/contact.html.twig', array('templateName' => 'contact',
+        'contact_name' => $contact_name,
+        'contact_email' => $contact_email,
+        'contact_phone' => $contact_phone,
+        'contact_message' => $contact_message,
+        'contact_ext' => $contact_ext,
+        'error' => true
+    ));
+
 })->bind('fr_contact-create');
 
+if($app['debug']) {
+    $app->error(function (\Exception $e, $code) use ($app) {
+
+        return $app->redirect('404');
+
+    });
+}
+
+
+
 $app->run();
+
+
 
 function web_image($context, $path)
 {

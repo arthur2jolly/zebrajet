@@ -2404,3 +2404,6 @@ blockquote { quotes: none; }
 .Price-list td {
     text-align: center;
 }
+.error {
+    color: red;
+}
